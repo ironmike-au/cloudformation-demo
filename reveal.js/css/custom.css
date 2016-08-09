@@ -1,0 +1,26 @@
+/*body:after {
+content: url(../cham_logo.png);
+position: fixed;
+bottom: 0.5em;
+left: 0.5em;
+width: 10px;
+height: 20px;
+box-shadow: 0px 0px 0px #000; }*/
+
+.bottom_r {
+  bottom:0px;
+  right:0px;
+  position:absolute;
+}
+
+.reveal pre {
+  box-shadow: none;
+}
+pre code {
+  background-color: transparent;
+}
+
+.reveal pre code {
+	max-height: 800px;
+  background-color: transparent;
+}

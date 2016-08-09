@@ -1,0 +1,378 @@
+<!--
+TODO:
+  - Presenter info slide (at the end)
+  - Publish slides and code on git for download
+  - Add Parameters section after introducing Ref:
+-->
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="lib/css/tomorrow-night-eighties.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal" style="background-image: url(cham_logo.png); background-size: 10%; background-position: 5% 95%; background-repeat: no-repeat;">
+			<div class="slides">
+        <section data-background-image="rubik-bg.jpg"><h1 style="text-align: right;">
+
+        </section>
+        <section data-transition="convex">
+          <h1>43,252,003,274,489,856,000</h1>
+        </section>
+        <section data-transition="convex" data-background-image="homer-rubik.gif">
+        </section>
+        <section data-transition="convex">
+          <h1>20 Moves or Less</h1>
+        </section>
+        <section data-transition="convex" data-background-image="rubik-human.gif">
+        </section>
+        <section data-transition="convex">
+          <h1>Human</h1>
+          <h1>4.09 seconds</h1>
+          <h3>(one time)</h3>
+        </section>
+        <section data-transition="convex">
+          <ol>
+            <li>Set up Firewall</li>
+            <li>Provision Instance</li>
+            <li>Connect to Instance</li>
+            <li>Install Patches</li>
+            <li>Set up user account</li>
+            <li>Install Web Server</li>
+            <li>Configure Web Server</li>
+            <li>Zzzzzz</li></ol>
+        </section>
+        <section data-transition="convex" data-background-image="sleepy-bunny.gif">
+        </section>
+        <section data-transition="convex" data-background-image="rubik-robot.gif">
+        </section>
+        <section data-transition="convex">
+          <h1>Robot</h1>
+          <h1>0.88 seconds</h1>
+          <h3>(every time)</h3>
+        </section>
+        <section data-transition="convex" data-background-color="rgba( 22, 152, 213, 0.6 )">
+          <h1 style="text-align: right">CloudFormation<h1>
+          <h1 style="text-align: right">is your<h1>
+          <h1 style="text-align: right; color: #f9ff33;">AWS<h1>
+          <h1 style="text-align: right">Robot<h1>
+        </section>
+        <section data-transition="convex" data-background-color="rgba( 22, 152, 213, 0.6 )">
+          <h2>
+            <ul>
+              <li>Accurate</li>
+              <li>Fast</li>
+              <li>Repeatable</li>
+              <li>Not You</li>
+            </ul>
+          </h2>
+        </section>
+        <section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+          {
+            "Resources" : {
+              "LogicalID" : {
+                "Type" : "Resource type",
+                "Properties" : {
+                  Set of properties
+                }
+              }
+            }
+          }
+          </code></pre>
+        </section>
+				<section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+          {
+            "Resources" : {
+              "<mark>LogicalID</mark>" : {
+                "Type" : "Resource type",
+                "Properties" : {
+                  Set of properties
+                }
+              }
+            }
+          }
+          </code></pre>
+        </section>
+				<section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+          {
+            "Resources" : {
+              "<mark>UbuntuInstance</mark>" : {
+                "Type" : "Resource type",
+                "Properties" : {
+                  Set of properties
+                }
+              }
+            }
+          }
+          </code></pre>
+        </section>
+        <section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+          {
+            "Resources" : {
+              "UbuntuInstance" : {
+                "Type" : <mark>"Resource type"</mark>,
+                "Properties" : {
+                  Set of properties
+                }
+              }
+            }
+          }
+          </code></pre>
+        </section>
+        <section data-transition-speed="fast">
+          <table>
+            <tr>
+              <td>
+                <ul>
+      						<li>AWS::EC2::Instance</li>
+      						<li>AWS::S3::Bucket</li>
+      						<li>AWS::EC2::VPC</li>
+      						<li>AWS::IAM::User</li>
+      					</ul>
+              </td>
+              <td>
+                <ul>
+      						<li>AWS::OpsWorks::Stack</li>
+      						<li>AWS::Route53::HostedZone</li>
+      						<li>AWS::EC2::NatGateway</li>
+      						<li>+150 More</li>
+      					</ul>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+          {
+            "Resources" : {
+              "UbuntuInstance" : {
+                "Type" : <mark>"AWS::EC2::Instance"</mark>,
+                "Properties" : {
+                  Set of properties
+                }
+              }
+            }
+          }
+          </code></pre>
+        </section>
+        <section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+          {
+            "Resources" : {
+              "UbuntuInstance" : {
+                "Type" : "AWS::EC2::Instance",
+                "Properties" : {
+                  <mark>"SecurityGroupIds" : ,</mark>
+                  <mark>"KeyName" : "cfdemo",</mark>
+                  <mark>"ImageId" : "ami-6c14310f",</mark>
+                  <mark>"InstanceType" : "t2.small"</mark>
+                }
+              }
+            }
+          }
+          </code></pre>
+        </section>
+        <section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+          {
+            "NewSecurityGroup" : {
+              "Type" : "AWS::EC2::SecurityGroup",
+              "Properties" : {
+                "GroupDescription" : "Enable SSH access via port 22",
+                "SecurityGroupIngress" : [ {
+                  "IpProtocol" : "tcp",
+                  "FromPort" : "22",
+                  "ToPort" : "22",
+                  "CidrIp" : "0.0.0.0/0"
+                } ],
+                "VpcId" : "vpc-ac5bf9c9"
+              }
+            }
+          }
+          </code></pre>
+        </section>
+        <section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+          {
+            "<mark>NewSecurityGroup</mark>" : {
+              "Type" : "AWS::EC2::SecurityGroup",
+              "Properties" : {
+                "GroupDescription" : "Enable SSH access via port 22",
+                "SecurityGroupIngress" : [ {
+                  "IpProtocol" : "tcp",
+                  "FromPort" : "22",
+                  "ToPort" : "22",
+                  "CidrIp" : "0.0.0.0/0"
+                } ],
+                "VpcId" : "vpc-ac5bf9c9"
+              }
+            }
+          }
+          </code></pre>
+        </section>
+        <section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+          {
+            "NewSecurityGroup" : {
+              "Type" : "<mark>AWS::EC2::SecurityGroup</mark>",
+              "Properties" : {
+                "GroupDescription" : "Enable SSH access via port 22",
+                "SecurityGroupIngress" : [ {
+                  "IpProtocol" : "tcp",
+                  "FromPort" : "22",
+                  "ToPort" : "22",
+                  "CidrIp" : "0.0.0.0/0"
+                } ],
+                "VpcId" : "vpc-ac5bf9c9"
+              }
+            }
+          }
+          </code></pre>
+        </section>
+        <section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+          {
+            "NewSecurityGroup" : {
+              "Type" : "AWS::EC2::SecurityGroup",
+              "Properties" : {
+                "GroupDescription" : "Enable SSH access via port 22",
+                "SecurityGroupIngress" : [ {
+                  "IpProtocol" : "tcp",
+                  "FromPort" : "22",
+                  "ToPort" : "22",
+                  "CidrIp" : "0.0.0.0/0"
+                } ],
+                "VpcId" : "<mark>vpc-ac5bf9c9</mark>"
+              }
+            }
+          }
+          </code></pre>
+        </section>
+        <section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+          {
+            "<mark>NewSecurityGroup</mark>" : {
+              "Type" : "AWS::EC2::SecurityGroup",
+              "Properties" : {
+                "GroupDescription" : "Enable SSH access via port 22",
+                "SecurityGroupIngress" : [ {
+                  "IpProtocol" : "tcp",
+                  "FromPort" : "22",
+                  "ToPort" : "22",
+                  "CidrIp" : "0.0.0.0/0"
+                } ],
+                "VpcId" : "vpc-ac5bf9c9"
+              }
+            }
+          }
+          </code></pre>
+        </section>
+        <section data-transition="slide" data-background-transition="zoom">
+					<h2>Reference</h2>
+					<p>
+						{ Ref : "Returns the <emphasis>result</emphasis> of a LogicalID or a parameter value" }
+					</p>
+          <br/>
+				</section>
+        <section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+            {
+              "Resources" : {
+                "UbuntuInstance" : {
+                  "Type" : "AWS::EC2::Instance",
+                  "Properties" : {
+                    "SecurityGroupIds" : <mark>[ { "Ref" : "NewSecurityGroup" } ]</mark>,
+                    "KeyName" : "cfdemo",
+                    "ImageId" : "ami-6c14310f",
+                    "InstanceType" : "t2.small"
+                  }
+                }
+              }
+            }
+          </code></pre>
+        </section>
+        <section data-transition="fade-in fade-out">
+          <pre><code class="json" data-noescape>
+
+            {
+              "Parameters" : {
+                "OurIP" : {
+                  "Type": "String"
+                }
+              }
+            }
+
+          </code></pre>
+        </section>
+        <section data-transition="slide-in" data-background="#4d7e65" data-background-transition="zoom">
+					<p>
+						<i>demo</i>
+					</p>
+				</section>
+        <section>
+          <h3 style="text-align: right; color: #acecac;">Mike Richardson</h1>
+          <h3 style="text-align: right; color: #fff;">DevOps Consultant</h1>
+          <h3 style="text-align: right">Chamonix</h3>
+          <br/>
+          <h4 style="text-align: right; color: #6a6aff;">@otakumike</h4>
+          <h4 style="text-align: right; color: #62d688;">richo.com.au/adl</h4>
+
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+        width: 1280,
+        height: 1024,
+
+        minScale: 1,
+        maxScale: 1.2,
+
+        controls: false,
+        progress: false,
+
+				history: false,
+        slideNumber: true,
+
+        showNotes: false,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

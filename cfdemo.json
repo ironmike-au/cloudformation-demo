@@ -1,0 +1,32 @@
+{
+  "Parameters" : {
+    "OurIP" : {
+      "Type": "String"
+    }
+  },
+
+  "Resources" : {
+    "UbuntuInstance" : {
+      "Type" : "AWS::EC2::Instance",
+      "Properties" : {
+        "SecurityGroupIds" : [ { "Ref" : "NewSecurityGroup" } ],
+        "KeyName" : "cfdemo",
+        "ImageId" : "ami-6c14310f",
+        "InstanceType" : "t2.small"
+      }
+    },
+    "NewSecurityGroup" : {
+      "Type" : "AWS::EC2::SecurityGroup",
+      "Properties" : {
+        "GroupDescription" : "Enable SSH access via port 22",
+        "SecurityGroupIngress" : [ {
+          "IpProtocol" : "tcp",
+          "FromPort" : "22",
+          "ToPort" : "22",
+          "CidrIp" : { "Ref": "OurIP" }
+        } ],
+        "VpcId" : "vpc-ac5bf9c9"
+      }
+    }
+  }
+}
